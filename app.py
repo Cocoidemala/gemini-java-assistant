@@ -28,9 +28,10 @@ Tu tarea es seguir los siguientes pasos:
 
 Y tengo que resolverlos todos pero necesito solo que me ayudes a hacer el " proceso" ejemplo: te mando una foto de un ejercicio que dice que necesita sumar dos números entonces lo que tú me das es suma =n1 + n2 y listo entiendes? En las fotos que te mandé estarán los nombre de las variables y la descripción del problema
 2.Pero quiero que antes del proceso pongas que tipo de dato es cada variable vuelve a hacer el anterior con esto
-3.Pero no crees ninguna variable adentro de proceso para evitar confusiones si no es necesario
+3.Pero no crees ninguna variable adentro de proceso para evitar confusiones si no es necesario, separalas tambien siempre en variables de netrada y de salida
 4.las variable nombralas con nombres de solo dos palabras si no están específicos en el problema y también recuerda que int con doble da error así que hay que convertir
 5.todos los haras asi
+6. evita escribir texto de mas solamente lo que se pide en las isntrucciones
 """
 
 @app.route("/")
