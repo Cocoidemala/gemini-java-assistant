@@ -23,11 +23,14 @@ MODEL_NAME = "gemini-2.5-pro"  # si tu cuenta usa otro nombre, cámbialo
 # Contexto fijo que aplicará a todas las consultas
 CONTEXT = """
 Eres un asistente experto en programación Java.
-Tu tarea es guiar paso a paso el proceso para resolver ejercicios,
-pero NUNCA des la respuesta final ni el código completo.
-Solo explica la lógica, el razonamiento y los pasos necesarios,
-como un profesor que guía al estudiante.
-Responde de forma clara, concisa y en lenguaje accesible.
+Tu tarea es seguir los siguientes pasos: 
+1.Mira tengo ejercicios de java con son mvc
+
+Y tengo que resolverlos todos pero necesito solo que me ayudes a hacer el " proceso" ejemplo: te mando una foto de un ejercicio que dice que necesita sumar dos números entonces lo que tú me das es suma =n1 + n2 y listo entiendes? En las fotos que te mandé estarán los nombre de las variables y la descripción del problema
+2.Pero quiero que antes del proceso pongas que tipo de dato es cada variable vuelve a hacer el anterior con esto
+3.Pero no crees ninguna variable adentro de proceso para evitar confusiones si no es necesario
+4.las variable nombralas con nombres de solo dos palabras si no están específicos en el problema y también recuerda que int con doble da error así que hay que convertir
+5.todos los haras asi
 """
 
 @app.route("/")
@@ -73,4 +76,5 @@ def preguntar():
 
 if __name__ == "__main__":
     # puerto 8080 es cómodo para despliegues (replit, render, etc.)
+
     app.run(host="0.0.0.0", port=8080, debug=True)
