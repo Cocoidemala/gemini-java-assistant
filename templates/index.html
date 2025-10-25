@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gemini Asistente Java</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 24px auto; padding: 0 16px; }
+    textarea { width:100%; height:120px; }
+    .chat { border:1px solid #ddd; padding:12px; border-radius:8px; margin-top:16px; min-height:120px; }
+    .btn { padding:10px 16px; border:none; background:#2b6cb0; color:white; border-radius:6px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h2>Asistente de Java (tu versión)</h2>
+  <p>Sube la foto del enunciado o escribe el problema. El asistente explicará **solo el proceso**.</p>
+
+  <form id="form">
+    <label>Tu pregunta / enunciado:</label><br/>
+    <textarea id="pregunta" name="pregunta" placeholder="Escribe el enunciado o pregunta..."></textarea><br/><br/>
+    <label>Subir imagen (opcional):</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*"><br/><br/>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+
+  <div class="chat" id="respuesta">
+    <em>Aquí aparecerá la respuesta del asistente.</em>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
